@@ -1,0 +1,9 @@
+ CREATE TABLE [dbo].[BankAccountUser] (
+	Id UNIQUEIDENTIFIER DEFAULT NEWID(),
+	IdUser UNIQUEIDENTIFIER,
+	IdBankAccount UNIQUEIDENTIFIER,
+
+	PRIMARY KEY (Id),
+	CONSTRAINT fk_BankAccountUser_IdUser FOREIGN KEY (IdUser) REFERENCES [User](Id),
+	CONSTRAINT fk_BankAccountUser_IdBankAccount FOREIGN KEY (IdBankAccount) REFERENCES BankAccount(Id)
+ );

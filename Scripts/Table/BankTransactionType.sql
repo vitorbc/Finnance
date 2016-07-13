@@ -1,0 +1,4 @@
+ CREATE TABLE [dbo].[BankTransactionType] (
+	Id UNIQUEIDENTIFIER DEFAULT NEWID() PRIMARY KEY,
+	Name VARCHAR(255),
+ );

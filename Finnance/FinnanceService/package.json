@@ -1,0 +1,13 @@
+{
+  "name": "finnance-service",
+  "version": "0.1.0",
+  "description": "API to retrieve data from Finnance database.",
+  "main": "server.js",
+  "author": {
+    "name": "Vitor Costa",
+    "email": "vbc@cin.ufpe.br"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
